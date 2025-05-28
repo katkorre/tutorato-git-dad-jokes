@@ -1,7 +1,7 @@
 import json
 
 def load_known_jokes():
-    with open("dad_jokes.json") as f:
+    with open("/content/tutorato-git-dad-jokes/dad_jokes.json") as f:
         return json.load(f)
 
 def classify_joke(joke, known_jokes):
@@ -9,7 +9,7 @@ def classify_joke(joke, known_jokes):
     if joke in known_jokes:
         return "Dad Joke ✅"
     elif "pun" in joke or "knee" in joke:
-        return "So Bad It's Good 😅"
+        return "So Bad It's Good"
     else:
         return "Not a Dad Joke ❌"
 
