@@ -11,7 +11,7 @@ def classify_joke(joke, known_jokes):
     elif "pun" in joke or "knee" in joke:
         return "So Bad It's Good"
     else:
-        return "Not a Dad Joke ❌"
+        return "Not a Dad Joke :( )"
 
 if __name__ == "__main__":
     joke = input("Tell me a joke: ")
